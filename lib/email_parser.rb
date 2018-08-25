@@ -1,4 +1,7 @@
 class EmailParser
+
+  def parse(emails)
+  end
 end
 
 
@@ -13,7 +16,7 @@ end
 
 #it "parses both CSV and space delimited emails" do
 #  emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
-#  expect(EmailParser.new(emails).parse).to eq(["avi@test.com", "arel@test.com","test@avi.com", "test@arel.com"]) 
+#  expect(EmailParser.new(emails).parse).to eq(["avi@test.com", "arel@test.com","test@avi.com", "test@arel.com"])
 #end
 
 #it 'parses and removes duplicate emails' do
