@@ -5,7 +5,6 @@ class EmailParser
   #takes in a string of emails separated by spaces or commas, and returns and array of non-duplicative emails
   def parse(emails)
     email_array = emails.split(",")
-    binding.pry
   end
 
 end
