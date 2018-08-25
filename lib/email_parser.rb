@@ -11,7 +11,7 @@ class EmailParser
   #takes in a string of emails separated by spaces or commas, and returns and array of non-duplicative emails
   def parse
     email_array = @emails.split(", ")
-    email_array.each.with_index do |email,i| 
+    email_array.each.with_index do |email,i|
       email_array[i] = email.split(" ") if email.include?(" ")
     end
   end
