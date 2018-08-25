@@ -1,8 +1,11 @@
 require 'pry'
 
 class EmailParser
-
+  attr_accessor :emails
   #takes in a string of emails separated by spaces or commas, and returns and array of non-duplicative emails
+  def initialize(emails=nil)
+  end
+
   def parse(emails)
     email_array = emails.split(", ")
   end
