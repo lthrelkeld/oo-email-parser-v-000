@@ -2,13 +2,16 @@ require 'pry'
 
 class EmailParser
   attr_accessor :emails
-  #takes in a string of emails separated by spaces or commas, and returns and array of non-duplicative emails
+
+  #initialize the object with email string
   def initialize(emails=nil)
     @emails = emails
   end
 
+  #takes in a string of emails separated by spaces or commas, and returns and array of non-duplicative emails
   def parse
     email_array = @emails.split(", ")
+    email_array.each {|email| email.split(" ")}.flatten
   end
 
 end
